@@ -1,6 +1,8 @@
-" Colors
+" colors
 syntax on
 set termguicolors
+
+let g:netrw_dirhismax=0
 
 "let g:colors_name='catppuccin_mocha'
 
@@ -174,19 +176,19 @@ hi link Terminal Normal
 hi link Ignore Comment
 hi Normal guibg=NONE
 
-" Settings
+" settings
 set nocompatible
 set updatetime=100
 set shiftwidth=4
 set tabstop=4
 set expandtab
 
-" Files
+" files
 let g:netrw_banner = 0
 set path+=**
 set wildmenu
 
-" Cursor
+" cursor
 let &t_SI = "\e[4 q"
 let &t_EI = "\e[2 q"
 augroup VCenterCursor
@@ -195,7 +197,7 @@ augroup VCenterCursor
         \ let &scrolloff=winheight(win_getid())/2
 augroup END
 
-" Columns
+" columns
 set number
 highlight EndOfBuffer     ctermbg=NONE ctermfg=black
 highlight SignColumn      guibg=NONE  ctermbg=NONE 
@@ -203,7 +205,7 @@ highlight GitGutterAdd    ctermfg=green
 highlight GitGutterChange ctermfg=yellow
 highlight GitGutterDelete ctermfg=red
 
-" Statusline
+" statusline
 set noshowcmd
 set shortmess+=F
 set noshowmode
