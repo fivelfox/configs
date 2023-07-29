@@ -30,4 +30,3 @@ PS1="\e[30m\]\e[44m\]  \e[00m\]\e[34m\] \u.\h \e[00m\]\e[35m\]\w\e[33m\] : "
 PS1="\e[34m\]  \u.\h \e[00m\]\e[35m\]\w\e[33m\] : "
 alias neo='clear; neofetch; ls'
 neo
-echo " "
