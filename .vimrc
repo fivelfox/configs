@@ -2,8 +2,6 @@
 syntax on
 set termguicolors
 
-let g:netrw_dirhismax=0
-
 "let g:colors_name='catppuccin_mocha'
 
 let s:rosewater = "#F5E0DC"
@@ -250,5 +248,16 @@ function! StatuslineMode()
     return "REPLACE"
   elseif l:mode==#"c"
     return "COMMAND"
+  endif
+endfunction
+
+function! Filetype()
+  let Y=&filetype
+  if Y==#"VIM"
+    return " "
+  elseif Y==#"SH"
+    return " "
+  else
+    return " "
   endif
 endfunction

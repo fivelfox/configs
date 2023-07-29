@@ -109,12 +109,10 @@ colors:
     #transparent_background_colors: true
   #??????
 
-selection:
+#selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-
-  save_to_clipboard: true
 
 cursor:
   unfocused_hollow: false

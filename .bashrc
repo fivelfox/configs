@@ -22,8 +22,12 @@ if [ -d ~/.bashrc.d ]; then
 	done
 fi
 
-unset rc
-eval "$(starship init bash)"
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+}
 
+PS1="\e[30m\]\e[44m\]  \e[00m\]\e[34m\] \u.\h \e[00m\]\e[35m\]\w\e[33m\] : "
+PS1="\e[34m\]  \u.\h \e[00m\]\e[35m\]\w\e[33m\] : "
 alias neo='clear; neofetch; ls'
 neo
+echo " "
