@@ -180,6 +180,7 @@ set updatetime=100
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set conceallevel=2
 
 " files
 let g:netrw_banner = 0
@@ -239,25 +240,14 @@ hi User5 ctermbg=yellow ctermfg=black
 function! StatuslineMode()
   let l:mode=mode()
   if l:mode==#"n" 
-    return "NORMAL"
+    return "normal"
   elseif l:mode==?"v"
-    return "VISUAL"
+    return "visual"
   elseif l:mode==#"i"
-    return "INSERT"
+    return "insert"
   elseif l:mode==#"R"
-    return "REPLACE"
+    return "replace"
   elseif l:mode==#"c"
-    return "COMMAND"
-  endif
-endfunction
-
-function! Filetype()
-  let Y=&filetype
-  if Y==#"VIM"
-    return " "
-  elseif Y==#"SH"
-    return " "
-  else
-    return " "
+    return "command"
   endif
 endfunction
