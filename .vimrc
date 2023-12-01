@@ -240,14 +240,14 @@ hi User5 ctermbg=yellow ctermfg=black
 function! StatuslineMode()
   let l:mode=mode()
   if l:mode==#"n" 
-    return "normal"
+    return "NORMAL"
   elseif l:mode==?"v"
-    return "visual"
+    return "VISUAL"
   elseif l:mode==#"i"
-    return "insert"
+    return "INSERT"
   elseif l:mode==#"R"
-    return "replace"
+    return "REPLACE"
   elseif l:mode==#"c"
-    return "command"
+    return "COMMAND"
   endif
 endfunction
