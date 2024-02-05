@@ -29,4 +29,3 @@ fi
 PS1="\[\e[34m\] \u.\h \[\e[35m\]\w\[\e[37m\] : "
 #alias neo='clear; neofetch'
 alias update="sudo dnf update > /tmp/dnf.log"
-export PATH=$PATH:~/src/zig-linux-x86_64-0.12.0-dev.1814+5c0d58b71
